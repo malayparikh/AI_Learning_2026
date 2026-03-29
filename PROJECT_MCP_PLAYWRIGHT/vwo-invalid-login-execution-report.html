@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VWO Invalid Login Execution Report</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 1rem;
+        background: #f6f8fc;
+      }
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 8px 30px rgba(16, 30, 115, 0.15);
+        max-width: 1000px;
+        margin: auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .stat-box {
+        background: #f2f8ff;
+        border-radius: 10px;
+        padding: 16px;
+        text-align: center;
+      }
+      .stat-box .value {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .stat-box .label {
+        color: #6b7c93;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 5px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px 10px;
+        text-align: left;
+        border-bottom: 1px solid #e5e9f2;
+      }
+      th {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #5f6f8e;
+      }
+      td.status {
+        font-weight: 700;
+      }
+      .pass {
+        color: #1f8a00;
+        background: rgba(64, 200, 99, 0.15);
+        border-radius: 999px;
+        padding: 6px 12px;
+        display: inline-block;
+      }
+      .fail {
+        color: #e42b28;
+        background: rgba(244, 113, 109, 0.13);
+        border-radius: 999px;
+        padding: 6px 12px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h1>VWO Invalid Login Execution Report</h1>
+        <div>Generated: <strong>March 29, 2026, 15:11 IST</strong></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <div class="value">5</div>
+          <div class="label">Total Tests</div>
+        </div>
+        <div class="stat-box">
+          <div class="value">5</div>
+          <div class="label">Passed</div>
+        </div>
+        <div class="stat-box">
+          <div class="value">0</div>
+          <div class="label">Failed</div>
+        </div>
+        <div class="stat-box">
+          <div class="value">100%</div>
+          <div class="label">Pass Rate</div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Test ID</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TC-001</td>
+            <td>Empty Email + Empty Password</td>
+            <td class="status"><span class="pass">Pass</span></td>
+            <td>Validation error displayed</td>
+          </tr>
+          <tr>
+            <td>TC-002</td>
+            <td>Invalid Email Format</td>
+            <td class="status"><span class="pass">Pass</span></td>
+            <td>Invalid email message displayed</td>
+          </tr>
+          <tr>
+            <td>TC-003</td>
+            <td>Valid Email + Empty Password</td>
+            <td class="status"><span class="pass">Pass</span></td>
+            <td>Password required message displayed</td>
+          </tr>
+          <tr>
+            <td>TC-004</td>
+            <td>Empty Email + Valid Password</td>
+            <td class="status"><span class="pass">Pass</span></td>
+            <td>Email required message displayed</td>
+          </tr>
+          <tr>
+            <td>TC-005</td>
+            <td>Valid Email + Wrong Password</td>
+            <td class="status"><span class="pass">Pass</span></td>
+            <td>Authentication error displayed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

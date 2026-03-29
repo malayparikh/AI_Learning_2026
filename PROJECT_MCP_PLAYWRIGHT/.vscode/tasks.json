@@ -2,9 +2,49 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Move items except .git and target folder",
+			"label": "Playwright test with HTML report",
 			"type": "shell",
-			"command": "cd c:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\Project_MCP_Playwright; Remove-Item PROJECT_MCP_PLAYWRIGHT -Recurse -Force; mkdir PROJECT_MCP_PLAYWRIGHT; Get-ChildItem -Force | Where-Object { $_.Name -ne '.git' -and $_.Name -ne 'PROJECT_MCP_PLAYWRIGHT' } | ForEach-Object { Move-Item $_.FullName -Destination .\\PROJECT_MCP_PLAYWRIGHT }"
+			"command": "npx playwright test --reporter=html --reporter=list",
+			"isBackground": false
+		},
+		{
+			"label": "Playwright test with HTML report",
+			"type": "shell",
+			"command": "npx playwright test --reporter=html --reporter=list",
+			"isBackground": false
+		},
+		{
+			"label": "Playwright test with HTML report",
+			"type": "shell",
+			"command": "npx playwright test --reporter=html --reporter=list",
+			"isBackground": false
+		},
+		{
+			"label": "Playwright headed run with HTML report",
+			"type": "shell",
+			"command": "npx playwright test --headed --reporter=html --reporter=list",
+			"isBackground": false
+		},
+		{
+			"label": "Playwright headed run with HTML report correct reporter",
+			"type": "shell",
+			"command": "$ts = Get-Date -Format 'yyyyMMdd_HHmmss'; $report='playwright-report-' + $ts; npx playwright test --headed --reporter=list,html --reporter-options=output=$report; if ($LASTEXITCODE -eq 0) { Start-Process \"$report\\index.html\" }",
+			"isBackground": false
+		},
+		{
+			"label": "Initialize git repository",
+			"type": "shell",
+			"command": "git init"
+		},
+		{
+			"label": "Add GitHub remote",
+			"type": "shell",
+			"command": "git remote add origin https://github.com/malayparikh/AI_Learing_2026.git"
+		},
+		{
+			"label": "Add all files to git",
+			"type": "shell",
+			"command": "git add ."
 		}
 	]
 }
