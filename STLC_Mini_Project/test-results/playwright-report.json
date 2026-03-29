@@ -1,0 +1,358 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\playwright.config.js",
+    "rootDir": "C:/Users/malay/Desktop/AI_2X_Blueprint/AI_Learning_2026/STLC_Mini_Project/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/malay/Desktop/AI_2X_Blueprint/AI_Learning_2026/STLC_Mini_Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/malay/Desktop/AI_2X_Blueprint/AI_Learning_2026/STLC_Mini_Project/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/playwright-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "01_add_one_element.spec.js",
+      "file": "01_add_one_element.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "01 add one element",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7103,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start 01_add_one_element\n"
+                    },
+                    {
+                      "text": "deleteButtons count: \u001b[33m1\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-29T10:47:43.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b42c70ff37f4744854fd-7bcf4d907e955a075e35",
+          "file": "01_add_one_element.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "02_add_five_elements.spec.js",
+      "file": "02_add_five_elements.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "02 add five elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4827,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start 02_add_five_elements\n"
+                    },
+                    {
+                      "text": "deleteButtons count after adding 5: \u001b[33m5\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-29T10:47:43.184Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "815ce6f4636f5a993cba-21b5ecece7da4b885176",
+          "file": "02_add_five_elements.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "03_remove_one_after_adding_three.spec.js",
+      "file": "03_remove_one_after_adding_three.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "03 remove one after adding three",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7986,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start 03_remove_one_after_adding_three\n"
+                    },
+                    {
+                      "text": "deleteButtons count after removing 1 from 3: \u001b[33m2\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-29T10:47:43.234Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "818722ca4b8d3ab75b4f-740b8f921d116168edec",
+          "file": "03_remove_one_after_adding_three.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "04_remove_all_elements.spec.js",
+      "file": "04_remove_all_elements.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "04 remove all elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6295,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start 04_remove_all_elements\n"
+                    },
+                    {
+                      "text": "deleteButtons count before removing all: \u001b[33m4\u001b[39m\n"
+                    },
+                    {
+                      "text": "deleteButtons count after removing all: \u001b[33m0\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-29T10:47:43.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6585a01d1d3928df02e4-2514ee000c04c3b683f8",
+          "file": "04_remove_all_elements.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "05_intentional_failure.spec.js",
+      "file": "05_intentional_failure.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "05 intentional failure - expecting extra button",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "failed",
+                  "duration": 7029,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\tests\\05_intentional_failure.spec.js:15:25",
+                    "location": {
+                      "file": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\tests\\05_intentional_failure.spec.js",
+                      "column": 25,
+                      "line": 15
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 13 |\u001b[39m     deleteButtons\u001b[33m,\u001b[39m\n \u001b[90m 14 |\u001b[39m   )\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(deleteButtons)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m) \u001b[90m// intentional failing assertion\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\n \u001b[90m 17 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\tests\\05_intentional_failure.spec.js",
+                        "column": 25,
+                        "line": 15
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     deleteButtons\u001b[33m,\u001b[39m\n \u001b[90m 14 |\u001b[39m   )\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(deleteButtons)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m) \u001b[90m// intentional failing assertion\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\tests\\05_intentional_failure.spec.js:15:25\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Start 05_intentional_failure\n"
+                    },
+                    {
+                      "text": "Actual deleteButtons count should be 1 but test expects 2: \u001b[33m1\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-29T10:47:43.219Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\test-results\\05_intentional_failure-05--ee026-re---expecting-extra-button\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\test-results\\05_intentional_failure-05--ee026-re---expecting-extra-button\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\AI_Learning_2026\\STLC_Mini_Project\\tests\\05_intentional_failure.spec.js",
+                    "column": 25,
+                    "line": 15
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1c157d13dc71166b720d-838c031c4e98eaff169b",
+          "file": "05_intentional_failure.spec.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-29T10:47:41.077Z",
+    "duration": 10492.736,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
