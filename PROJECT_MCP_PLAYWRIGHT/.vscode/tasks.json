@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Move items except .git and target folder",
+			"type": "shell",
+			"command": "cd c:\\Users\\malay\\Desktop\\AI_2X_Blueprint\\Project_MCP_Playwright; Remove-Item PROJECT_MCP_PLAYWRIGHT -Recurse -Force; mkdir PROJECT_MCP_PLAYWRIGHT; Get-ChildItem -Force | Where-Object { $_.Name -ne '.git' -and $_.Name -ne 'PROJECT_MCP_PLAYWRIGHT' } | ForEach-Object { Move-Item $_.FullName -Destination .\\PROJECT_MCP_PLAYWRIGHT }"
+		}
+	]
+}
