@@ -191,4 +191,4 @@ For questions or issues:
 
 **Version**: 1.0.0  
 **Last Updated**: March 29, 2026  
-**Author**: AI Assistant
+**Author**: Malay Parikh + AI Assistant

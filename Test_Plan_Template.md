@@ -158,7 +158,7 @@ This test plan outlines the negative testing strategy for the VWO (Visual Websit
 ---
 
 **Document Version**: 1.0  
-**Created By**: AI Assistant  
+**Created By**: Malay Parikh + AI Assistant  
 **Date**: March 29, 2026  
 **Reviewed By**: [Pending]  
 **Approved By**: [Pending]
